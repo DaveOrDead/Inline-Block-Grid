@@ -2,15 +2,7 @@
 
 A fluid, responsive, lightweight, simple, SCSS based inline block grid.
 
-If you can't be bothered to read all the below you can just jump straight into the Codepen demo and play around: [Inline Block Grid Demo](http://codepen.io/davislurve/pen/Azfqb
-
-## Credits
-
-This would not have been possible without heavy influence drawn from the following grid systems:
-
-* Harry Roberts [InuitCSS Grid](https://github.com/inuitcss/objects.layout)
-
-* Bourbon's [Neat](http://neat.bourbon.io/) grid
+If you can't be bothered to read all the below you can just jump straight into the Codepen demo and play around: [Inline Block Grid Demo](http://codepen.io/davislurve/pen/Azfqb)
 
 ## Why this grid?
 
@@ -41,6 +33,15 @@ Options are included to push or pull cells, reverse their ordering, switch gutte
 ### Easy to use
 
 Simply adjust one number to change cell spans
+
+
+## Things to be aware of
+
+* This is a twelve column grid
+* Inline-block needs white space removed between elements. (I tend to use comments to achieve this as per the example below)
+* Box-sizing: border-box; is required on all grid elements or it won't work.  I tend to blanketly apply this class to all elements anyway so it's not an issue for me, if not, you'll want to add this in.
+
+That's it - Have a quick look through the examples below and the options at the bottom.  Should be good to go!
 
 ## Examples
 
@@ -129,8 +130,9 @@ article  {
  }
 ```
 
-## Things to be aware of
+## Credits
 
-* This is a twelve column grid
-* Inline-block needs white space removed between elements. (I tend to use comments to achieve this as per the example above)
-* Box-sizing: border-box; is required on all grid elements or it won't work.  I tend to blanketly apply this class to all elements anyway so it's not an issue for me, if not, you'll want to add this in.
+This would not have been possible without heavy influence drawn from the following grid systems:
+
+* Harry Roberts [InuitCSS Grid](https://github.com/inuitcss/objects.layout)
+* Bourbon's [Neat](http://neat.bourbon.io/) grid
